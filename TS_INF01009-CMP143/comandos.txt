@@ -1,0 +1,4 @@
+gcc -o main main.o -lglfw -lGL -lX11 -lpthread -lXrandr -lXi -ldl
+pkg-config --libs x11 xrandr xi xxf86vm glew glfw3 lX11
+
+target_link_libraries(CMP143 ${COMMON_LIBS} ${CMAKE_DL_LIBS})
